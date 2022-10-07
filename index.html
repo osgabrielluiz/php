@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Relatório Criminal</title>
+</head>
+<body>
+    
+    <main>
+
+        <header>
+            
+        <h2>Formulário de Relatório Policia</h2>
+    
+        <p>Se você testemunhou um incidente que requer atribuição policial, por favor, use este formulário de relatório policial para sinalizá-lo. A polícia revisará o relatório e tomará as ações apropriadas. Obrigado por ser um cidadão responsável.</p>
+    
+    </header>
+    
+    <form action="app.php" method="_POST">
+
+                <label for="box">Tipo</label>
+            <div>
+                <input type="checkbox" id="box">Crime<br>
+                <input type="checkbox" id="box">Crime<br>
+                <input type="checkbox" id="box">Crime<br>
+                <input type="checkbox" id="box">Crime<br>
+            </div><!-- checkbox -->
+            
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" />
+            </div>
+            
+            <div>
+                <label for="data">Data</label>
+                <input type="date" id="data" />
+            </div>
+
+            <div>
+                <label for="endereco">Endereço</label>
+                <input id="endereco">
+            </div>
+
+            <div>
+                <label for="descricao">Descrição</label>
+                <input id="descricao">
+            </div>
+        
+            <div>
+                <label for="msg">Você foi afetado pelo incidente?</label>
+                <input id="msg">
+            </div>
+
+            <div class="button">
+                <button type="submit">Enviar</button>
+            </div>
+
+    </form><!-- final do form -->
+    
+</main><!-- principal -->
+</body>
+</html>
